@@ -1,28 +1,70 @@
-# WeatherAPI
+# SkyCastAPI
 
-A Weather API, or Weather Application Programming Interface, is a service that provides programmatic access to weather-related information. It allows developers to integrate current weather conditions, forecasts, and other meteorological data into their applications, websites, or services. Weather APIs are valuable for a variety of applications, including mobile apps, websites, smart home devices, and more.
+SkyCastAPI is a Python-based project that provides real-time weather forecasts for various locations. It integrates with a Weather API to retrieve accurate weather data efficiently.
 
-**Features:**
+## Features
 
-1) Current Weather Data:
-   •Temperature: Current temperature in Celsius and Fahrenheit.
-   •Humidity: The percentage of moisture in the air.
-   •Wind Speed: The speed at which the wind is blowing.
+- Provides real-time weather forecasts.
+- Displays country-specific temperature data.
+- Offers brief weather descriptions.
 
-2)Forecast Data:
-   •Description about the weather.
+## Technologies Used
 
-3)Location Information:
-   •Name of the location (city, town, etc.).
-   •Region: The geographical region of the location.
-   •Country: The country in which the location is situated.
+- Python
+- Weather API with API Key
 
-**Important Considerations:**
-   •API Key: Weather APIs require an API key for access. This key is often obtained by signing up on the API provider's website.
-   •Rate Limits: Weather APIs have rate limits to prevent abuse. Users may be restricted to a certain number of requests per day or minute, depending on their subscription level.
+## Installation
 
-**Endpoints:**
-Current Weather
-_Parameters:_
-   •key (required): Your API key.
-   •q (required): The location for which you want to retrieve the current weather.
+1. Clone the repository:
+    ```bash
+   https://github.com/Dishika18/SkyCastAPI.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd skycastapi
+    ```
+
+3. Create a virtual environment:
+    ```bash
+    python -m venv env
+    ```
+
+## Usage
+
+1. Obtain your API key from the Weather API provider.
+2. Create a `.env` file in the project directory and add your API key:
+    ```env
+    API_KEY=your_api_key_here
+    ```
+
+3. Run the application:
+    ```bash
+    python main.py
+    ```
+
+4. Follow the on-screen prompts to get weather forecasts for your desired locations.
+
+## Example
+
+After running `python main.py`, you will be prompted to enter a location. The application will then display the current weather, including temperature and a brief description.
+
+## Contributing
+
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Make your changes.
+4. Commit your changes:
+    ```bash
+    git commit -m "Add your feature"
+    ```
+5. Push to the branch:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+6. Open a pull request.
